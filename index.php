@@ -48,8 +48,8 @@ display: none;
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-
-    <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
+	<!-- <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation"> -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header navbar-collapse page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -150,7 +150,7 @@ display: none;
                  
                 </div>
                 <div id="googlemap" class="col-lg-6">
-                <P>test</P>
+              
                 </div>
             </div>
         </div>
@@ -439,18 +439,24 @@ styles: [
 
 map = new google.maps.Map(document.getElementById('googlemap'),
 mapOptions);
+//custom marker
+var image = {
+	url: 'img/heart-icon.png'
+}
+
+"img/heart-icon.png";
 
 // Show the default red marker at the location
 marker = new google.maps.Marker({
 position: latLng,
 map: map,
+icon: image,
 draggable: false,
  animation: google.maps.Animation.DROP
  });
 }
 google.maps.event.addDomListener(window, 'load', showGoogleMaps);
 </script>
-
 
 
     <!-- Custom Theme JavaScript -->

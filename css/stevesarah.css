@@ -73,8 +73,9 @@ a:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Times New Roman", "Georgia", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  letter-spacing: 2x;
+  font-size: 15px;
+  /*13*/
+  letter-spacing: 2px;
   background-color: #ffffff;
 }
 .navbar-brand {
@@ -117,6 +118,7 @@ a:focus {
     padding: 20px 0;
     border-bottom: none;
     letter-spacing: 1px;
+    text-shadow: 0px 0px 10px rgba(1, 1, 1, 0.2);
     background: transparent;
     -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
@@ -124,6 +126,7 @@ a:focus {
   }
   .top-nav-collapse {
     padding: 0;
+    text-shadow: none;
     background-color: #ffffff;
     box-shadow: 0 0 8px #eee;
   }
