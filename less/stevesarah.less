@@ -1,0 +1,688 @@
+// Variables
+
+@primary: #fff;
+@dark: #555;
+@light: #fff;
+@playfair: 'Playfair Display';
+
+// LESS
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: @playfair, "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: @light;
+    background-color: @light;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+// Typography 
+/*
+@font-face {
+    font-family: 'asterismregular';
+    src: url('../fonts/asterism-webfont.eot');
+    src: url('../fonts/asterism-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/asterism-webfont.woff') format('woff'),
+         url('../fonts/asterism-webfont.ttf') format('truetype'),
+         url('../fonts/asterism-webfont.svg#asterismregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+
+@font-face {
+    font-family: 'jacquesgilles';
+    src: url('../fonts/jacques-gilles-webfont.eot');
+    src: url('../fonts/jacques-gilles-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/jacques-gilles-webfont.woff') format('woff'),
+         url('../fonts/jacques-gilles-webfont.ttf') format('truetype'),
+         url('../fonts/jacques-gilles-webfont.svg#jacquesgilles') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 35px;
+    font-family: "jacquesgilles", "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+#proposal p, #proposal h2 {
+    color:#333 !important;
+}
+
+
+@media(min-width:767px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 16px;
+        line-height: 1.7;
+    }
+}
+
+a {
+    color: @primary;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: darken(@primary, 20%);
+}
+
+.light {
+    font-weight: 400;
+}
+
+ // Navigation 
+
+ .navbar {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    text-transform: uppercase;
+    font-family: "Times New Roman", "Georgia", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:13px;
+    letter-spacing:2x;
+    background-color: @light;
+   
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-brand:focus {
+    outline: none;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li.active {
+    outline: none;
+   /* background-color: rgba(255,255,255,0.2);*/
+   background-color:none;
+}
+
+.navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: @dark;
+}
+
+.navbar-toggle:focus,
+.navbar-toggle:active {
+    outline: none;
+}
+
+@media(max-width:767px) {
+    .navbar-nav a {
+        color:@dark;
+    }
+
+    .navbar-brand {
+        color:@dark;
+    }
+
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        border-bottom: none;
+        letter-spacing: 1px;
+        background: transparent;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+        background-color: @light;
+          box-shadow: 0 0 8px #eee;
+    }
+
+    .navbar-collapse a {
+        color:@light;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(50, 50, 50, 0.1);
+    }
+
+    .navbar-custom.top-nav-collapse a {
+        color:@dark;
+    }
+
+    .navbar-brand {
+        color:@dark;
+    }
+}
+
+ // Full Page Image Intro Section 
+
+ .intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: @light;
+   background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background-color: @dark;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+.intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.brand-heading {
+    margin:0;
+    font-size: 90px;
+    text-shadow: 0px 0px 100px rgba(155, 155, 155,1);
+}
+
+.amperstand {
+    font-size:60px;
+}
+
+.intro-text {
+
+    font-size: 18px;
+    text-shadow: 0px 0px 50px rgba(155, 155, 155,1);
+}
+
+#location p {
+  //  text-shadow: 1px 1px 20px rgba(155, 155, 155,1);
+}
+
+@media(min-width:767px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .brand-heading {
+        font-size: 100px;
+        margin-top:60px;
+    }
+
+    .intro-text {
+    	font-family:"jacquesgilles";
+        font-size: 25px;
+    }
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid @light;
+    border-radius: 35px;
+    font-size: 40px;
+    color: @light;
+    background: transparent;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: none;
+    color: @light;
+    background: rgba(255,255,255,0.1);
+}
+
+.directions:hover {
+	background:#fff;
+	color:#555;
+}
+
+.page-scroll .btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.page-scroll .btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {    
+    0 {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0 {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+ // Content Sections 
+
+ .content-section {
+   
+}
+
+.intro {
+  //  z-index:1;
+  //  position:fixed;
+}
+
+#proposal, #location, #rsvp, #wedding {
+  //  z-index:100;
+  //  position:relative;
+}
+
+.proposal-section {
+    width: 100%;
+    padding: 25px 0;
+    color: @light;
+   // background: url('http://ntdf.co.uk/concept/wp-content/themes/ntdfmain/images/body-2.jpg') no-repeat center center scroll;
+    background-color: @light;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.location-section {
+    width: 100%;
+    padding: 25px 0;
+    color: @light;
+    background: url(../img/location-bg.jpg) no-repeat center center scroll;
+    //background: url(../img/bg2.jpg) no-repeat center center scroll;
+    background-color: @dark;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#googlemap {
+	height:300px;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+.rsvp-section {
+    width: 100%;
+    padding: 25px 0;
+    //color: @light;
+    //background: url(../img/bg2.jpg) no-repeat center center scroll;
+    background-color: #1c1e26;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.wedding-section {
+    width: 100%;
+    padding: 25px 0;
+    color: @light;
+    background: url(../img/bg2.jpg) no-repeat center center scroll;
+    background-color: @dark;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+
+#map {
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+}
+
+// form
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  background: none;
+  outline: none;
+  border: 0;
+  color: #FFF;
+  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
+  line-height: 2;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  resize: none;
+  border-radius: 0;
+  text-align: left;
+}
+#contact-form input {
+  border-bottom: 1px solid #FFF;
+  font-weight: 300;
+  padding-left: 20px;
+}
+
+.rsvp_move {
+	margin-right: 40px;
+}
+
+label p {
+
+font-size: 14px !important;
+text-transform: uppercase;
+font-weight: 300;
+color: #999;
+}
+
+input[type=radio].css-checkbox {
+	display:none;
+	}
+
+	input[type=radio].css-checkbox + label.css-label {
+		padding-left:26px;
+		height:21px; 
+		display:inline-block;
+		line-height:21px;
+		background-repeat:no-repeat;
+		background-position: 0 0;
+		font-size:21px;
+		vertical-align:middle;
+		cursor:pointer;
+
+	}
+
+			input[type=radio].css-checkbox:checked + label.css-label {
+				background-position: 0 -21px;
+			}
+			label.css-label {
+	background-image:url(check.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+			}
+
+
+.directions {
+position: relative;
+  display: block;
+  font-family: @playfair, "Georgia", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  border: 1px solid #FFF;
+  padding: 17px 40px 18px;
+  padding: 1.7rem 4rem 1.8rem;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  background-color: rgba(10,10,10,.2);
+  line-height: 1.5;
+  letter-spacing: 2px;
+  text-align: center;
+  width: auto;
+  font-size: 14px;
+  font-size: 1.4rem;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -transition: all 0.6s ease;
+  transition: all 0.6s ease;
+	
+}
+#contact-form .submit {
+  position: relative;
+  display: block;
+  font-family: @playfair, "Georgia", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  border: 1px solid #FFF;
+  padding: 17px 40px 18px;
+  padding: 1.7rem 4rem 1.8rem;
+  margin-top: 55px;
+  margin-top: 5.5rem;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  text-align: center;
+  width: auto;
+  font-size: 14px;
+  font-size: 1.4rem;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+#contact-form .submit:hover,
+#contact-form .submit:focus {
+  border: 1px solid #ffffff;
+  outline: none;
+  color: #555555;
+  background-color: #ffffff;
+}
+
+@media(min-width:767px) {
+    .content-section {
+       // padding-top: 50px;
+    }
+
+    #proposal {
+       // padding-top:70%;
+    }
+
+    .proposal-section, .location-section, .rsvp-section, .wedding-section {
+        padding: 80px 0;
+    }
+
+    #map {
+        height: 400px;
+        margin-top: 250px;
+    }
+}
+
+@media(max-width:767px) {
+    #proposal {
+      //  padding-top:100%;
+    }
+}
+
+@media(max-width:481px) {
+	.rsvp_move {
+		margin-right:20px;
+	}
+	#googlemap {
+	    width:85% !important;
+	}
+	
+	#contact-form input {
+		padding-left:10px;
+	}
+}
+
+@media(max-width:461px) {
+	.css-label {
+		float:left;
+		padding-bottom:20px;
+	}
+	.rsvp_move {
+		margin-bottom:20px;
+	}
+	
+	#contact-form .submit {
+		margin-top: 35px;
+		margin-top: 3.5rem;
+	}
+	
+	label {
+		margin-bottom:10px;
+	}
+}
+
+ // Buttons 
+
+ .btn {
+    text-transform: uppercase;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid @primary;
+    color: @primary;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid @primary;
+    outline: none;
+    color: @dark;
+    background-color: @primary;
+}
+
+.btn-huge {
+    padding: 25px;
+    font-size: 26px;
+}
+
+.banner-social-buttons {
+    margin-top: 0;
+}
+
+.date_graphic {
+	width:70%;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+    #googlemap {
+	    width:70%;
+	    margin-left:auto;
+	    margin-right:auto;
+    }
+    
+    .date_graphic {
+	    width:40%;
+    }
+}
+
+
+
+@media(max-width:767px) {
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+    
+      h2 {
+	    font-size: 40px;
+    }
+}
+
+ // Highlight Color Customization 
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,0.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,0.2);
+}
+
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
+
+body {
+    webkit-tap-highlight-color: rgba(255,255,255,0.2);
+}
