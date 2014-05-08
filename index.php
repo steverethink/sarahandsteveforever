@@ -117,7 +117,7 @@ display: none;
 
                 <h3 style="color:#000;">September 2013</h3>
 
-<p>After spending a week in Iceland exploring the glaciers, volcanoes, waterfalls and geysirs, <br />Steve decided it was the perfect time. He got down on one knee on a mountain in Seltún and asked Sarah to be his wife. She said yes.</p>
+<p>After spending a week in Iceland exploring glaciers, volcanoes, waterfalls and geysirs, Steve decided it was the perfect time. He got down on one knee on a mountain in Seltún and asked Sarah to be his wife. She said yes.</p>
                 </div>
             </div>
         </div>
@@ -130,7 +130,7 @@ display: none;
                 <!--<div class="col-lg-8 col-lg-offset-2">-->
                 
                   <div class="col-lg-6 col-lg-push-6">  <h2>our wedding</h2>
-                    <p>Join us for a ceremony and reception at Balzac's in the Distillery District on September 13th, 2014 at 6:30pm. Cocktails and hors d'oeuvres at 6:30pm followed by the ceremony, dinner and fun.</p><p style="margin-top: -15px !important;">P.S. Semi-formal attire, but we think you'll look hot no matter what!</p>
+                    <p>Join us at Balzac's in the Distillery District on September 13th, 2014 at 6:30pm. Cocktails and hors d'oeuvres at 6:30pm followed by a ceremony, dinner and fun.</p><p style="margin-top: -15px !important;">P.S. Semi-formal attire, but we think you'll look hot no matter what!</p>
                    
                 </div>
                 <div class="col-lg-6 col-lg-pull-6"><img class="date_graphic" src="img/date.png" /></div>

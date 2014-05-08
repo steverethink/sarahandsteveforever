@@ -506,6 +506,11 @@ label.css-label {
     width: 40%;
   }
 }
+@media (min-width: 1199px) {
+  .location-section h2 {
+    margin-top: 35px;
+  }
+}
 @media (max-width: 767px) {
   ul.banner-social-buttons > li {
     display: block;
