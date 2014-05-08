@@ -150,7 +150,7 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: #ffffff;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url(../img/intro-bg.jpg) no-repeat center;
   background-color: #555555;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -180,7 +180,7 @@ a:focus {
   }
   .brand-heading {
     font-size: 100px;
-    margin-top: 60px;
+    margin-top: 40px;
   }
   .intro-text {
     font-family: "jacquesgilles";
@@ -188,13 +188,13 @@ a:focus {
   }
 }
 .btn-circle {
-  width: 70px;
-  height: 70px;
-  margin-top: 15px;
-  padding: 7px 16px;
+  width: 60px;
+  height: 60px;
+  margin-top: 35px;
+  padding: 7px 2px;
   border: 2px solid #ffffff;
   border-radius: 35px;
-  font-size: 40px;
+  font-size: 30px;
   color: #ffffff;
   background: transparent;
   -webkit-transition: background 0.3s ease-in-out;
@@ -294,12 +294,15 @@ a:focus {
   width: 100%;
   padding: 25px 0;
   color: #ffffff;
-  background: url(../img/bg2.jpg) no-repeat center center scroll;
+  background: url(../img/bg2.jpg) no-repeat center;
   background-color: #555555;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+.fixed-bg {
+  background-attachment: fixed;
 }
 #map {
   width: 100%;
@@ -504,6 +507,16 @@ label.css-label {
   }
   .date_graphic {
     width: 40%;
+  }
+}
+@media (max-width: 700px) {
+  .date_graphic {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .date_graphic {
+    width: 90%;
   }
 }
 @media (min-width: 1199px) {

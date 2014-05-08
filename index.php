@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -95,17 +96,20 @@ display: none;
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="">
+                    <div>
+                    	<img src="img/topwreath.png" style="width:20%;" />
                         <h1 class="brand-heading">sarah <span class="amperstand">&amp;</span> steve</h1>
                         <p class="intro-text">september 13, 2014</p>
-                        <div class="page-scroll">
+                        <img src="img/bottomwreath.png" style="width:20%;" />
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="page-scroll">
                             <a href="#proposal" class="btn btn-circle">
                                 <i class="fa fa-angle-double-down animated"></i>
                             </a>
                         </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -118,6 +122,7 @@ display: none;
                 <h3 style="color:#000;">September 2013</h3>
 
 <p>After spending a week in Iceland exploring glaciers, volcanoes, waterfalls and geysirs, Steve decided it was the perfect time. He got down on one knee on a mountain in Seltún and asked Sarah to be his wife. She said yes.</p>
+<img style="width:100%;" src="img/sarahsteve.jpg" />
                 </div>
             </div>
         </div>
