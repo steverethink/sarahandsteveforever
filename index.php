@@ -121,7 +121,7 @@ display: none;
 
                 <h3 style="color:#000;">September 2013</h3>
 
-<p>After spending a week in Iceland exploring glaciers, volcanoes, waterfalls and geysirs, Steve decided it was the perfect time. He got down on one knee on a mountain in Seltún and asked Sarah to be his wife. She said yes.</p>
+<p>After spending a week in Iceland exploring glaciers, volcanoes, waterfalls and geysirs, Steve decided it was the perfect time. He got down on one knee on a mountain in Krýsuvík and asked Sarah to be his wife. She said yes.</p>
 <img style="width:100%;" src="img/sarahsteve.jpg" />
                 </div>
             </div>
