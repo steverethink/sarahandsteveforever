@@ -8,7 +8,7 @@ function is_touch_device() {
  
 if (!is_touch_device()) {
  $(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
+    if ($(".navbar").offset().top > 25) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
